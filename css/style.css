@@ -21,7 +21,6 @@ html, body {
     font-weight: 700;
     cursor: pointer;
 }
-
 .landing{
     background: #242424;
     opacity: 1;
@@ -221,6 +220,7 @@ border-top: solid white 0.5vh;
     border-bottom: 2px solid white;
 }
 .seeprojects{
+    margin-left: 82%;
     padding-top: 1.5%;
 }
 .addslidertoprojects{
@@ -450,7 +450,7 @@ width: 6vh;
 height: 6vh;
 border-radius: 20em;
 border: solid black 0.3em;
-background-color: yellow;
+background-color: white;
 }
 .goback:hover{
     cursor: pointer;

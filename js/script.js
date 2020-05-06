@@ -4,6 +4,7 @@ setTimeout(function(){
     $('#h4').removeClass('header4')
 },500);
 
+$('.goback').hide()
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
@@ -100,6 +101,7 @@ $('.fa-github').on('click',function(){
 
 /*sliding 2nd page*/
 $(document).scroll(function () {
+    $('.goback').show()
     var y = $(this).scrollTop();
     var x = $(".secondPageRight").position();
     
