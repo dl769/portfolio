@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/6e5b9ddc9b.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div class="navbar">
+        <div><a class="navbarel" href="#p2">about</a></div>
+        <div><a class="navbarel" href="#p3">projects</a></div>
+        <div><a class="navbarel" href="#p4">contact</a></div>
+    </div>
+
+
+    <div class="landing" id="p1">
+        <div class=header1><h1>hello</h1></div><br>
+        <div class=header2><h1>my name is dawid</h1></div><br>
+        <div class=header3><h1>and this is my portfolio</h1></div>
+        <br>
+        <div class="wrapmainlinks">
+        <a id="linktop2" href="#p2"><div class=header4 id="header4"><h1>About me</h1></div></a>
+        <a id="linktop2" href="#p3"><div class=header4 id="header4"><h1>Check out my projects</h1></div></a>
+    </div>
+    </div>
+
+
+    <div class="secondPage" id="p2">
+        <div class="sidedimage"></div>
+        <div class="secondPageRight">
+            <a id="linktop2" href="#p1"><div id="backhomep2"><h4>back home</h4></div></a>
+            <div id="aboutme"><h2>About me</h2></div>
+            <div id="skillset">
+            I'm a Computer science student. In most of my projects I use Javascript with jQuery library which I recognize as one of the best things that happened to Web Development.
+            Currently I'm learning React JS which is fast growing Javascript Framework. During my studies I've had opportunity to write some code in low-level languages such as C or even Assembler-like ones...
+            I find myself really enjoying webdev but I know there's so much things to learn yet.
+        </div>
+
+        <a id="linktop3" href="#p3"><div class="gotoprojects"><h2>See my projects</h2></div></a>
+        
+
+
+        </div>
+    </div>
+
+    <div class="portfolioprojects" id="p3">
+        
+        <div class="seeprojects"><h2>see my projects</h2></div><br>
+<button class="goback" onclick="location.href='#p1'"><i class="fas fa-home fa-2x"></i></i></button>
+    <div class="wrapProjects">
+    <div class="projectsLeft">
+    <!--p1-->
+         <div class="project" id="projectone">        
+            <a class="projecttitle">Year Search Engine</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/yearsearchLOGO.png" class="imgproject" id="imgp1"><br>
+                <div class="briefInfo">React application that informs you what happend in selected year</div>
+                <div class="tUsed"><i class="fab fa-react"></i> <i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i></div>               
+            </div>
+            <div class="buttons"> <a class="button1" onClick="redirect('https://dl769.github.io/yearsearchengine/')"><i class="fab fa-safari"> Live Page</i></a><a class="button2" onClick="redirect('https://github.com/dl769/yearsearchengine/')"><i class="fab fa-github"> Github Repo </i></a></div>      
+          </div>
+    <!--p2-->
+        <div class="project" id="projecttwo">            
+            <a class="projecttitle">Whoscored Radars Resolver</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/whoscoredradarsLOGO.png" class="imgproject" id="imgp2"><br>
+                <div class="briefInfo">Script grabbing stats from whoscored and resolving them on my website. Idea is based on statsbomb which delivers data to world's biggest football clubs.</div>
+                <div class="tUsed"><i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i></div>
+            </div>
+            <div class="buttons"> <a class="button1" onClick="redirect('https://dl769.github.io/whoscoredradars/')"><i class="fab fa-safari"> Live Page</i></a><a class="button2" onClick="redirect('https://github.com/dl769/whoscoredradars/')"><i class="fab fa-github"> Github Repo </i></a></div>      
+          </div>
+    <!--p3-->
+        <div class="project" id="projectthree">
+            <a class="projecttitle">Movie Database</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/moviedbLOGO.png" class="imgproject"id="imgp3"><br>
+                <a class="briefInfo">Webapp which is created on bootstrap template and its task is to search thorough IMDb for movie titles.</a><br>
+                <div class="tUsed"><i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-swift"></i> </div>
+            </div>
+            <div class="buttons"> <a class="button1" onClick="redirect('https://dl769.github.io/moviedb/')"><i class="fab fa-safari"> Live Page</i></a><a class="button2" onClick="redirect('https://github.com/dl769/moviedb/')"><i class="fab fa-github"> Github Repo </i></a></div>      
+        </div>
+    <!--p4-->
+        <div class="project" id="projectfour">
+            <a class="projecttitle">Bomber</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/bomberLOGO.png" class="imgproject" id="imgp4"><br>
+                <a class="briefInfo">After deciding to play with SwiftUI I created minesweeper-like game for iPads which I called "Bomber". iOS 13+ support</a><br>
+                <div class="tUsed"><i class="fab fa-swift"></i> <i class="fab fa-apple"></i></div>
+            </div>
+            <div class="buttons"> <a class="button1" onClick="window.alert('Currently unavailable due to Apple policy. Complie it on your own from repo')"><i class="fas fa-download"></i> Download .ipa</i></a><a class="button2" onClick="redirect('https://github.com/dl769/bomber_swiftUI')"><i class="fab fa-github"> Github Repo </i></a></div>
+        </div>
+        <!--p5-->
+        <div class="project" id="projectfive">
+            <a class="projecttitle">Wheel Of Fortune</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/wheelLOGO.png" class="imgproject" id="imgp5"><br>
+                <div class="briefInfo">Adaptation of TV show as a game. Designed to play with opponent. Multilanguage.</div>
+            <div class="tUsed"><i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i></div>
+                
+            </div>
+            <div class="buttons"> <a class="button1" onClick="redirect('https://dl769.github.io/wheeloffortune/')"><i class="fab fa-safari"> Live Page</i></a><a class="button2" onClick="redirect('https://github.com/dl769/wheeloffortune/')"><i class="fab fa-github"> Github Repo </i></a></div>
+        </div>
+    </div>    
+
+
+    <!--p6-->
+    <div class="projectsRight">
+        <div class="project" id="projectsix">
+            <a class="projecttitle">iTunes Music Library</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/itunesmusiclibraryLOGO.png" class="imgproject" id="imgp6"><br>
+                <div class="briefInfo">Webapp that lets user find and play songs snippets of his favourite artists. It connects to external API in order to get data.</div>
+                <div class="tUsed"><i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i></div>  
+            </div>
+           <div class="buttons"> <a class="button1" onClick="redirect('https://dl769.github.io/itunesMusicLibrary/')"><i class="fab fa-safari"> Live Page</i></a><a class="button2" onClick="redirect('https://github.com/dl769/itunesMusicLibrary/')"><i class="fab fa-github"> Github Repo </i></a></div>
+        </div>
+    <!--p7-->
+        <div class="project" id="projectseven">
+            <a class="projecttitle">Ceneo Price Tracker</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/ceneoLOGO.png" class="imgproject" id="imgp7"><br>
+                <div class="briefInfo">Price tracker helping user compare prices. Once targeted item is loaded, each time app is visited - item's price with corresponding date can be displayed as chart and will be remembered by the app.</div>
+                <div class="tUsed"><i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i></div>       
+            </div>
+            <div class="buttons"> <a class="button1" onClick="redirect('https://dl769.github.io/ceneopricetracker/')"><i class="fab fa-safari"> Live Page</i></a><a class="button2" onClick="redirect('https://github.com/dl769/ceneopricetracker/')"><i class="fab fa-github"> Github Repo </i></a></div>
+        </div>
+    <!--p8-->
+        <div class="project" id="projecteight">
+            <a class="projecttitle">Word Occurency Counter</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/wordcounterLOGO.png" class="imgproject" id="imgp8"><br>
+                <a class="briefInfo">Tool written in C which is desired to count each word occurency in ebooks. Then the result is stored as a new *.txt file.</a><br>
+                <div class="tUsed"><i class="fab fa-cuttlefish"></i></div>
+            </div>
+           <div class="buttons"> <a class="button1" onClick="redirect('https://github.com/dl769/random-Programs/raw/master/wordCounter/exe/wordc.exe')"><i class="fas fa-download"></i> Download .exe</i></a><a class="button2" onClick="redirect('https://github.com/dl769/random-Programs/tree/master/wordCounter')"><i class="fab fa-github"> Github Repo </i></a></div>
+        </div>
+    <!--p9-->
+        <div class="project" id="projectnine">
+            <a class="projecttitle">Black Jack</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/blackjackLOGO.png" class="imgproject" id="imgp9"><br>
+                <div class="briefInfo">Well known casino game that entertained many of people not only in Las Vegas.</div>
+             <div class="tUsed"><i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i> <i class="fab fa-react"></i><i class="fab fa-cuttlefish"></i></div> 
+            </div>
+            <div class="buttons"> <a class="button1" onClick="redirect('https://dl769.github.io/blackjack/')"><i class="fab fa-safari"> Live Page</i></a><a class="button2" onClick="redirect('https://github.com/dl769/blackjack/')"><i class="fab fa-github"> Github Repo </i></a></div>
+        </div>
+    <!--p10-->
+        <div class="project" id="projectten">
+            <a class="projecttitle">Minesweeper</a>
+            <div class="imgandbrief"> 
+                <br><img src="./img/minesweeperLOGO.png" class="imgproject" id="imgp10"><br>
+                <div class="briefInfo">Popular game as a webapp. It lets user choose between difficulty levels and measures the time.</div>
+                <div class="tUsed"><i class="fab fa-js-square"></i> <i class="fab fa-css3-alt"></i> <i class="fab fa-html5"></i></div> 
+            </div>
+            <div class="buttons"> <a class="button1" onClick="redirect('https://dl769.github.io/minesweeper/')"><i class="fab fa-safari"> Live Page</i></a><a class="button2" onClick="redirect('https://github.com/dl769/minesweeper/')"><i class="fab fa-github"> Github Repo </i></a></div>
+        </div>
+    </div>    
+    </div>
+
+    <div id="moreprojectsone"><h1>To see more simply visit my github &nbsp;&nbsp;<i class="fab fa-github fa-3x"></i></h1></div>
+
+
+    </div>
+<div class="contact" id="p4">
+    <div id="contacthdr"><h1>Contact &nbsp;&nbsp;<i class="far fa-id-card fa-3x"></i></h1></div>
+
+
+    <div class="formcontact">
+
+        <form action="https://formspree.io/dawilop749@student.polsl.pl" method="POST">
+            Your name:
+            <div class="nameq">
+                <input type="text" name="name">
+            </div>
+            Your mail:
+            <div class="mailq">
+                <input type="email" name="_replyto">
+            </div>
+            Message:
+            <div class="msgq">
+                <textarea name="message" class="msgfield"></textarea>
+            </div>
+            <input type="submit" value="Send" id="buttonsend">
+        </form>
+
+
+
+    </div>
+    
+
+</div>
+    
+</body>
+</html>

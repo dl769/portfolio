@@ -1,0 +1,498 @@
+
+html, body {
+	height: 100%;
+    width: 100%;
+    margin: 0;
+}
+.navbar{
+    height: 6%;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8%;
+    margin-top: 1%;
+    margin-bottom: -1%;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.navbar div{
+    margin-right: 12%;
+}
+.navbar a:hover{
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.landing{
+    background: #242424;
+    opacity: 1;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+.header1{
+    color: #ffffff;
+    font-size: x-large;
+    display: inline-block;
+    font-weight: 800;
+    margin-top: 5%;
+    animation: slidefromleft30 1s forwards;
+}
+.header2{
+    color: #ffffff;
+    font-size: x-large;
+    display: inline-block;
+    font-weight: 800;
+    margin-left: 35%;
+    animation: slidefromtop6 1.2s forwards;
+}
+.header3{
+    color: #ffffff;
+    font-size: x-large;
+    display: inline-block;
+    font-weight: 800;
+    margin-top: 2%;
+    animation: slidefromright50 1.5s forwards;
+}
+
+
+@keyframes slidefromleft30 {
+    from {margin-left: 2%;;}
+    to {margin-left: 29%;}
+}
+@keyframes slidefromtop6 {
+    from {margin-top: 1%;;}
+    to {margin-top: 2%;}
+}
+@keyframes slidefromright50 {
+    from {margin-left: 70%;;}
+    to {margin-left: 50%;}
+}
+
+
+#h4{
+    animation: slideupbox 1.7s forwards;
+}
+.header4{
+    padding-left: 14px;
+    padding-right: 14px;
+    border: solid 10px #474747;
+    display: inline-block;
+    font-weight: 800;
+    margin-left: 15%;
+    margin-top:  7.5% ;
+    transition: all 1s ease-in-out;
+}
+@keyframes slideupbox {
+    from {margin-top: 10%;;}
+    to {margin-top: 7.5%;}
+}
+.header4:hover{
+    cursor: pointer;
+    animation: hoverthebox .3s;
+    border-color: #ffffff;
+    color:  #474747;
+
+}
+@keyframes hoverthebox{
+
+        0% {
+            border: solid 10px #474747;
+           
+        }
+
+        50% {
+            border: solid 10px#b3b1b1;
+   
+        }
+
+        100% {
+            border: solid 10px #ffffff;
+           
+        }
+        
+}
+.wrapmainlinks{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: space-around
+}
+#linktop2{
+    
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+}
+
+#linktop3{
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+}
+.navbarel
+{
+    color: inherit;
+    text-decoration: inherit;
+    cursor: inherit;
+}
+
+.secondPage{
+ 
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+.sidedimage{
+background-image: url("z2.jpg");
+background-size: cover;
+width: 24%;
+height: 100%;
+opacity: 07.;
+border-top: solid white 0.5vh;
+
+
+}
+#backhomep2{
+    padding-left: 10vh;
+    color: grey
+}
+#backhomep2:hover{
+    cursor: pointer;
+    color: yellow;
+}
+#aboutme{
+    color: white;
+    padding-left: 15vh;
+}
+#skillset{
+    padding-left: 20vh;
+    padding-right: 15vh;
+    font-size: 3vh;
+}
+.gotoprojects{
+    padding-left: 14px;
+    padding-right: 14px;
+    color: white;
+    border: solid 10px #474747;
+    display: inline-block;
+    font-weight: 800;
+    margin-top: 15%;
+    animation: slideupboxProjects 1.5s forwards;
+}
+@keyframes slideupboxProjects {
+    from {margin-left: 95vh;}
+    to {margin-left: 75vh;}
+}
+.gotoprojects:hover{
+    cursor: pointer;
+    border-color: #ffffff;
+    color: #474747;
+
+}
+.secondPageRight{
+    width: 76%;
+    color: #226089;
+    background-color: #242424;
+    font-size: x-large;
+    font-weight: 800;
+    text-align: left;
+    border-bottom: solid white 0.5vh;
+
+}
+.slidefromleftactivate{
+    animation: slidefromleft5 1s forwards;
+
+}
+@keyframes slidefromleft5 {
+    from {margin-left: 2%;;}
+    to {margin-left: 8%;}
+}
+
+.portfolioprojects{
+    background: #242424;
+    opacity: 1;
+    background-size: cover;
+    position: relative;
+    height: 220%;
+    width: 100%;
+    color: white;
+    border-bottom: 2px solid white;
+}
+.seeprojects{
+    padding-top: 1.5%;
+}
+.addslidertoprojects{
+    animation: slidefromright55 0.9s forwards;
+}
+
+@keyframes slidefromright55 {
+    from {margin-left: 82%;;}
+    to {margin-left: 55%;}
+}
+.projectsLeft{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+@keyframes slidefromleft4 {
+    from {margin-left: 1%;}
+    to {margin-left: 4%;}
+}
+.projectsRight{
+    height: 80%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 15vh;
+
+}
+.slidefromrightp3activate{
+    animation: slidefromright4 1.4s forwards;
+}
+.slidefromleftp3activate{
+    animation: slidefromleft4 1.4s forwards;
+}
+@keyframes slidefromright4 {
+    from {margin-left: 1%;}
+    to {margin-right: 4%;}
+}
+.wrapProjects{
+    padding-top: 2%;
+    display: flex;
+    height: 80%;
+    width: 100%;
+}
+.projecttitle{
+    text-decoration: underline red;
+    margin-left: 5.5vh;
+    font-weight: 800;
+    font-size: 1.75vw;
+}
+.imgproject{
+    margin-top: 1vh;
+    margin-left: 5vh;
+    float: left;
+    width: 10vw;
+    padding: 1vh;
+    margin-right: 2vh;
+}
+
+.briefInfo{
+    margin-top: .5vh;
+    font-size: 1.5vh;
+    font-weight: 600;
+    margin-right: 3vh;
+}
+
+.project:hover{
+    border: .6vh solid rgb(105, 102, 102);
+
+}
+.project{
+    margin-bottom: 7vh;
+    border: .6vh solid transparent;
+
+}
+.imgandbrief{
+    margin-top: -2vh;
+}
+.tUsed{
+    font-size: 4.5vh;
+}
+    /*languages*/
+.fa-js-square{
+    color: #f7e018;
+    margin-top: .5vh;
+}
+.fa-cuttlefish{
+    color: rgb(84, 84, 240);
+    margin-top: 1.5vh;
+
+}
+.fa-html5{
+    color: #dc4d25;
+}
+.fa-css3-alt{
+    color: #016db5;
+}
+.fa-react{
+    color: #00d3f7;
+    margin-top: 1.5vh;
+}
+.fa-swift{
+    color:#fe4529;
+}
+/*---languages---*/
+.buttons{
+    clear: both;
+   display: flex;
+   justify-content: space-around;
+
+}
+.button1:hover{
+    cursor: pointer;
+    border: solid white .2vh;
+}
+.button2:hover{
+    cursor: pointer;
+    border: solid red .2vh;
+}
+.button1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8vh;
+    margin: 1vh .3vh;
+    border-radius: 20em;
+    width: 30%;
+}
+.button2 {
+    background-color: grey;
+    color: white;
+    padding: 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8vh;
+    margin: 1vh .3vh;
+    border-radius: 20em;
+    width: 30%;
+}
+.contactsection{
+    background: #242424;
+    opacity: 1;
+    background-size: cover;
+    position: relative;
+    height: 75%;
+    width: 100%;
+    color: white;
+}
+.contact{
+    background: #242424;
+    opacity: 1;
+    background-size: cover;
+    position: relative;
+    height: 80%;
+    width: 100%;
+}
+#moreprojectsone{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.fa-github:hover{
+    cursor: pointer;
+    color: yellowgreen;
+}
+#contacthdr{
+    padding-top: 10vh;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.formcontact{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 2vh;
+    padding-top: 10vh;
+    text-align: center;
+
+}
+.nameq{
+    padding-bottom: 3vh;
+
+}
+.mailq{
+    padding-bottom: 3vh;
+}
+.msgq{
+    padding-bottom: 7vh;
+    
+}
+
+#buttonsend{
+    background-color: #808080;
+    color: white;
+    padding: 1vh;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.8vh;
+    border-radius: 20em;
+    width: 20%;
+    font-weight: 700;
+    border: none;
+}
+#buttonsend:hover{
+cursor: pointer;
+background-color: #5d5757;
+border: solid 0.3vh white;
+}
+.msgfield{
+    height: 10vh;
+    width: 22vh;
+}
+.goback{
+position: fixed;
+right: 3vh;
+top: 3vh;
+width: 6vh;
+height: 6vh;
+border-radius: 20em;
+border: solid black 0.3em;
+background-color: yellow;
+}
+.goback:hover{
+    cursor: pointer;
+}
+.fa-caret-up{
+    margin-top: -2vh;
+}
+/*mobilefriendly*/
+@media only screen and (max-width: 1100px) {
+    .projectsLeft{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5vh;
+    }
+
+    .projectsRight{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5vh;
+    
+    }
+    .wrapProjects{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+.portfolioprojects{
+    background: #242424;
+    opacity: 1;
+    background-size: cover;
+    position: relative;
+    height: 380%;
+    width: 100%;
+    color: white;
+    border-bottom: 2px solid white;
+}
+  }
