@@ -5,14 +5,40 @@ html, body {
     margin: 0;
 }
 .navbar{
-    height: 6%;
+    height: 5vh;
     display: flex;
     justify-content: flex-end;
     margin-right: 8%;
-    margin-top: 1%;
-    margin-bottom: -1%;
     font-weight: 400;
     font-size: 1.2em;
+    padding: 2vh;
+}
+
+.maintxt{
+    font-size: 7vh;
+
+}
+.maintop{
+    width: 100%;
+    height: 30vh;
+}
+.mainbottom{
+    padding-top: 10vh;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+.mainbottomleft{
+    padding-left: 15vh;
+    width: 40%;
+    border-bottom: solid 1vh white;
+
+}
+.mainbottomright{
+    padding-top: 15vh;
+    width: 60%;
+
 }
 .navbar div{
     margin-right: 12%;
@@ -33,15 +59,13 @@ html, body {
 .header1{
     color: #ffffff;
     font-size: x-large;
-    display: inline-block;
     font-weight: 800;
-    margin-top: 5%;
+    padding-top: 10vh;
     animation: slidefromleft30 1s forwards;
 }
 .header2{
     color: #ffffff;
     font-size: x-large;
-    display: inline-block;
     font-weight: 800;
     margin-left: 35%;
     animation: slidefromtop6 1.2s forwards;
@@ -49,9 +73,8 @@ html, body {
 .header3{
     color: #ffffff;
     font-size: x-large;
-    display: inline-block;
     font-weight: 800;
-    margin-top: 2%;
+    margin-top: 16%;
     animation: slidefromright50 1.5s forwards;
 }
 
@@ -61,31 +84,55 @@ html, body {
     to {margin-left: 29%;}
 }
 @keyframes slidefromtop6 {
-    from {margin-top: 1%;;}
-    to {margin-top: 2%;}
+    from {margin-top: 2%;;}
+    to {margin-top: 4%;}
 }
 @keyframes slidefromright50 {
     from {margin-left: 70%;;}
     to {margin-left: 50%;}
 }
-
-
-#h4{
+.mainbottom{
     animation: slideupbox 1.7s forwards;
 }
+
 .header4{
-    padding-left: 14px;
-    padding-right: 14px;
-    border: solid 10px #474747;
+    padding: 2vh;
+    border: solid .8vh #474747;
     display: inline-block;
     font-weight: 800;
-    margin-left: 15%;
     margin-top:  7.5% ;
-    transition: all 1s ease-in-out;
+    
+}
+.header5{
+    padding: 2vh;
+    border: solid .8vh #474747;
+    display: inline-block;
+    font-weight: 800;
+    margin-left: 20vh;
+    margin-top:  7.5% ;
+    
+}
+.abouttitle{
+    text-decoration: underline rgb(192, 192, 18);
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 10vh;
+    font-weight: 800;
+    font-size: 3.5vh;
+}
+.aboutunder{
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vh;
+    margin-top: 2vh;
+    margin-left: 15vh;
+    font-weight: 400;
+    font-size: 2vh;
 }
 @keyframes slideupbox {
-    from {margin-top: 10%;;}
-    to {margin-top: 7.5%;}
+    from {margin-top: 15%;;}
+    to {margin-top: 0%;}
 }
 .header4:hover{
     cursor: pointer;
@@ -97,21 +144,50 @@ html, body {
 @keyframes hoverthebox{
 
         0% {
-            border: solid 10px #474747;
+            border: solid .8vh #474747;
            
         }
 
         50% {
-            border: solid 10px#b3b1b1;
+            border: solid .8vh #b3b1b1;
    
         }
 
         100% {
-            border: solid 10px #ffffff;
+            border: solid .8vh #ffffff;
            
         }
         
 }
+.imgmain{
+    width: 14vh;
+    height: auto;
+    margin: 1vh;
+}
+.mainimgs{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: flex-start;
+}
+.mainimgsleft{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.mainimgscenter{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+.mainimgsright{
+
+    display: flex;
+    flex-direction: column;
+    
+}
+
 .wrapmainlinks{
     padding-top: 10vh;
     display: flex;
@@ -168,21 +244,24 @@ border-top: solid white 0.5vh;
 #skillset{
     padding-left: 20vh;
     padding-right: 15vh;
-    font-size: 3vh;
+    font-size: 2vh;
+}
+.wss{
+    font-size: 4vh;
+    padding: 1vh;
 }
 .gotoprojects{
-    padding-left: 14px;
-    padding-right: 14px;
     color: white;
-    border: solid 10px #474747;
+    border: solid .8vh #474747;
     display: inline-block;
-    font-weight: 800;
+    font-weight: 600;
     margin-top: 15%;
+    padding: .8vh;
     animation: slideupboxProjects 1.5s forwards;
 }
 @keyframes slideupboxProjects {
-    from {margin-left: 95vh;}
-    to {margin-left: 75vh;}
+    from {padding-left: 15vh;}
+    to {margin-left: 25vh;}
 }
 .gotoprojects:hover{
     cursor: pointer;
@@ -459,7 +538,7 @@ background-color: white;
     margin-top: -2vh;
 }
 /*mobilefriendly*/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1180px) {
     .projectsLeft{
         height: 80%;
         width: 80%;
@@ -495,4 +574,71 @@ background-color: white;
     color: white;
     border-bottom: 2px solid white;
 }
+  }
+
+
+  @media only screen and (max-aspect-ratio: 1/1) {
+    .projectsLeft{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5vh;
+    }
+
+    .projectsRight{
+        height: 80%;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 5vh;
+    
+    }
+    .wrapProjects{
+    padding-top: 2%;
+    display: flex;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+}
+.portfolioprojects{
+    background: #242424;
+    opacity: 1;
+    background-size: cover;
+    position: relative;
+    height: 400%;
+    width: 100%;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.mainbottomleft{
+    padding-left: 15vh;
+    width: 100%;
+    border-bottom: solid 1vh white;
+
+}
+.mainbottom{
+    padding-top: 10vh;
+    width: 100%;
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+}
+.mainbottomleft{
+    padding-left: 15vh;
+    width: 100%;
+
+}
+.mainbottomright{
+    padding-top: 15vh;
+    width: 100%;
+
+}
+.landing{
+    height: 140%;
+}
+
   }

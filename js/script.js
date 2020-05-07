@@ -1,4 +1,4 @@
-let width
+
 $(document).ready(function(){
 setTimeout(function(){
     $('#h4').removeClass('header4')
@@ -13,8 +13,63 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             behavior: 'smooth'
         });
     });
+
+    $('.wss').on('click',function(){
+        window.setTimeout(function(){
+            $(".projectsRight").addClass("slidefromrightp3activate");
+            $(".projectsLeft").addClass("slidefromleftp3activate");
+            $('.goback').show();
+            $('.seeprojects').addClass("addslidertoprojects")
+        },100)
+    }
+    )
 });
 
+
+//
+/*
+let width = window.screen.width;
+let height = window.screen.height;
+let ratio = height/width;
+if(ratio>1){
+
+    $('.projectsLeft').css('height','80%')
+    $('.projectsLeft').css('width','80%')
+    $('.projectsLeft').css('display','flex')
+    $('.projectsLeft').css('flex-direction','column')
+    $('.projectsLeft').css('justify-content','space-between')
+    $('.projectsLeft').css(' margin-left','5vh')
+
+    $('.projectsRight').css('height','80%')
+    $('.projectsRight').css('width','80%')
+    $('.projectsRight').css('display','flex')
+    $('.projectsRight').css('flex-direction','column')
+    $('.projectsRight').css('justify-content','space-between')
+    $('.projectsRight').css(' margin-left','5vh')
+
+    $('.portfolioprojects').css('background','242424')
+    $('.portfolioprojects').css('height','80%')
+    $('.portfolioprojects').css('background-size','cover')
+    $('.portfolioprojects').css('position','relative')
+    $('.portfolioprojects').css('height','400vh')
+    $('.portfolioprojects').css('width','100%')
+    $('.portfolioprojects').css('color','white')
+    $('.portfolioprojects').css('border-bottom','2px solid white')
+
+    $('.wrapProjects').css('padding-top','2%')
+    $('.wrapProjects').css('display','flex')
+    $('.wrapProjects').css('flex-direction','column')
+    $('.wrapProjects').css('height','s80%')
+    $('.wrapProjects').css('width','100%')
+
+
+
+}
+console.log(ratio);
+console.log(window.screen.width)
+console.log(window.screen.height)
+*/
+//
 
 $("#projectone").hover(function(){
     $('#imgp1').attr("src","./img/yearsearch.gif");
@@ -100,6 +155,7 @@ $('.fa-github').on('click',function(){
 })
 
 /*sliding 2nd page*/
+/*
 $(document).scroll(function () {
     $('.goback').show()
     var y = $(this).scrollTop();
@@ -115,6 +171,7 @@ $(document).scroll(function () {
     }
 
     });
+*/
 
     $(document).scroll(function () {
         var y = $(this).scrollTop();

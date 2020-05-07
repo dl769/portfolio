@@ -5,51 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="aos/dist/aos.css" />
+    <script src="aos/dist/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/6e5b9ddc9b.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
-    <div class="navbar">
-        <div><a class="navbarel" href="#p2">about <i class="fas fa-info-circle"></i></a></div>
-        <div><a class="navbarel" href="#p3">projects <i class="fas fa-project-diagram"></i></a></div>
-        <div><a class="navbarel" href="#p4">contact <i class="far fa-id-card"></i></a></div>
-    </div>
 
 
     <div class="landing" id="p1">
-        <div class=header1><h1>hello</h1></div><br>
-        <div class=header2><h1>my name is dawid</h1></div><br>
-        <div class=header3><h1>and this is my portfolio</h1></div>
-        <br>
-        <div class="wrapmainlinks">
-        <a id="linktop2" href="#p2"><div class=header4 id="header4"><h1>About me </h1></div></a>
-        <a id="linktop2" href="#p3"><div class=header4 id="header4"><h1>Check out my projects</h1></div></a>
-    </div>
-    </div>
-
-
-    <div class="secondPage" id="p2">
-        <div class="sidedimage"></div>
-        <div class="secondPageRight">
-            <a id="linktop2" href="#p1"><div id="backhomep2"><h4>back home</h4></div></a>
-            <div id="aboutme"><h2>About me</h2></div>
-            <div id="skillset">
-            I'm a Computer science student. In most of my projects I use Javascript with jQuery library which I recognize as one of the best things that happened to Web Development.
-            Currently I'm learning React JS which is fast growing Javascript Framework. During my studies I've had opportunity to write some code in low-level languages such as C or even Assembler-like ones...
-            I find myself really enjoying webdev but I know there's so much things to learn yet.
+        <div class="maintop">
+        <div class=header1><a class="maintxt">hello,</a></div>
+        <div class=header2><a class="maintxt">welcome to my page</a></div>
         </div>
-
-        <a id="linktop3" href="#p3"><div class="gotoprojects"><h2>See my projects</h2></div></a>
-        
-
-
+        <div class="mainbottom">
+            <div class="mainbottomleft">
+                <a id="linktop2" href="#p3" class="wss"><div class=header4 id="header4">Watch my projects</div></a>
+                <div class="mainimgs">
+                    <div class="mainimgsleft">
+                        <img class="imgmain" src="img/itunesmusiclibrary.gif"><img class="imgmain" src="img/yearsearch.gif">
+                    </div>
+                    <div class="mainimgscenter">
+                        <img class="imgmain" src="img/ceneo.gif"><img class="imgmain" src="img/moviedb.gif">
+                    </div>
+                    <div class="mainimgsright">
+                        <img class="imgmain" src="img/blackjack.gif"><img class="imgmain" src="img/wheel.gif">
+                    </div>
+                </div>
+             </div>
+             <div class="mainbottomright">
+                <a class="abouttitle">About</a>
+                <a class="aboutunder">I'm a Computer science student. In most of my projects I use Javascript with jQuery library which I recognize as one of the best things that happened to Web Development.
+                    Currently I'm learning React JS which is fast growing Javascript Framework. During my studies I've had opportunity to write some code in low-level languages such as C or even Assembler-like ones...
+                    I find myself really enjoying webdev but I know there's so much things to learn yet.</a>
+            </div>
         </div>
     </div>
+    
 
     <div class="portfolioprojects" id="p3">
         
         <div class="seeprojects"><h2>see my projects</h2></div><br>
+        
 <button class="goback" onclick="location.href='#p1'"><i class="fas fa-home fa-2x"></i></i></button>
     <div class="wrapProjects">
     <div class="projectsLeft">
